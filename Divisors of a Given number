@@ -1,0 +1,18 @@
+in1=int(input("Enter the Number: "))
+
+class Divisor():
+    def __init__(self,a):
+        self.a=a
+
+    def number(self):
+        c=0
+        d=[]
+        while c<=self.a:
+            c=c+1
+            if self.a%c==0:
+                d.append(c)
+        return d
+
+
+t1=Divisor(in1)
+print(t1.number())
