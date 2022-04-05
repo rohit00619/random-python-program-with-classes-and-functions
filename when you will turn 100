@@ -1,0 +1,22 @@
+name=input("Enter your name: ")
+
+age=int(input("Please Enter your Age: "))
+class Turn100():
+#    current_year=2022
+
+
+
+    def __init__(self, name,age):
+        self.name=name
+        self.age=age
+
+
+
+    def __str__(self):
+        current_year=2022
+        x1=current_year-age
+        x2=x1+100
+        return "Hi {} you will turn in the year {}".format(self.name,x2)
+
+t=Turn100(name,age)
+print(t.__str__())
