@@ -1,0 +1,16 @@
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+in1=int(input("Enter the Number: "))
+class Lessthanfive():
+    def __init__(self,a,b):
+        self.b=b
+        self.a=a
+
+    def number(self):
+        c=[]
+        for n in self.a:
+            if n<=self.b:
+                c.append(n)
+        return c
+
+t1=Lessthanfive(a,in1)
+print(t1.number())
