@@ -1,0 +1,32 @@
+
+x1=input("Enter a String that you want to check: ")
+x=x1.lower()
+class Palindrome():
+    def __init__(self,x):
+        self.x=x
+
+    def calculate(self):
+        empty=[]
+        for x1 in self.x:
+            empty.append(x1)
+        if len(empty)%2==0:
+            half=len(empty)/2
+            halfint=int(half)
+            firhlf=(empty[:halfint])
+            scdhlf=(empty[:halfint-1:-1])
+            if firhlf==scdhlf:
+                print ("This is a Plaindrome")
+            else:
+                print ("This is not a Plaindrome")
+        elif len(empty)%2==1:
+            half=len(empty)/2
+            halfint=int(half)
+            firhlf=(empty[:halfint])
+            scdhlf=(empty[:halfint:-1])
+            if firhlf==scdhlf:
+                print ("This is a Plaindrome")
+            else:
+                print("This is not a Palindrome")
+        return "The Word that you have typer in was: '{}'".format(self.x)
+t=Palindrome(x)
+print(t.calculate())
