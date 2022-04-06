@@ -1,9 +1,8 @@
 
-x1=input("Enter a String that you want to check: ")
-x=x1.lower()
+x=input("Enter a String that you want to check: ")
 class Palindrome():
     def __init__(self,x):
-        self.x=x
+        self.x=x.lower()
 
     def calculate(self):
         empty=[]
@@ -27,6 +26,6 @@ class Palindrome():
                 print ("This is a Plaindrome")
             else:
                 print("This is not a Palindrome")
-        return "The Word that you have typer in was: '{}'".format(self.x)
+        return "The Word that you have typer in was: '{}'".format(x)
 t=Palindrome(x)
 print(t.calculate())
