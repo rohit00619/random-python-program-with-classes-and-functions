@@ -1,0 +1,44 @@
+Player1=input("Enter First Player name: ")
+Player2=input("Enter Second Player name: ")
+
+class RPS():
+    def __init__(self, Player1,Player2):
+        self.Player1=Player1
+        self.Player2=Player2
+
+    def logic(self):
+
+        P1c=input("{} please select your choice from R for Rock ,P for Paper and S for Scissor : ".format(self.Player1))
+        P2c=input("{} please select your choice from R for Rock ,P for Paper and S for Scissor : ".format(self.Player2))
+        P1=P1c.upper()
+        P2=P2c.upper()
+        while True:
+
+            if P1==P2:
+                print('Its a Tie')
+            elif P1=='P':
+                if P2=='R':
+                    print("{} Loose".format(self.Player1))
+                else:
+                    print("{} Win".format(self.Player1))
+
+            elif P1=='R':
+                if P2=="S":
+                    print("{} Loose".format(self.Player1))
+
+                else:
+                    print("{} Win".format(self.Player1))
+
+            elif P1=="S":
+                if P2=="P":
+                    print("{} Loose".format(self.Player1))
+
+                else:
+                    print("{} Win".format(self.Player1))
+                    
+            else :
+                print('Not a Valid Input')
+
+
+t=RPS(Player1,Player2)
+print(t.logic())
