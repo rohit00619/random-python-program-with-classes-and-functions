@@ -1,0 +1,18 @@
+a=[1,2,3,4,5,6,7,8,9,10]
+
+ax=int(input("Enter the number that you want to search: "))
+
+class Search():
+    def __init__(self, a,ax):
+        self.a=a
+        self.ax=ax
+
+    def cal(self):
+        for x in self.a:
+            if x==self.ax:
+                return "{} is in the list".format(self.ax)
+            else:
+                return "{} is not in the list".format(self.ax)
+
+t=Search(a,ax)
+print(t.cal())
