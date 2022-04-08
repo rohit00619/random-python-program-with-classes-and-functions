@@ -1,0 +1,19 @@
+a=input("ENter your sentences: ")
+
+
+
+
+class Reverse():
+    def __init__(self,a):
+        self.a=a
+
+    def cal(self):
+        self.a=self.a.split()
+        c=[]
+        for x in self.a:
+            c.append(x)
+        c.reverse()
+        ed=" ".join(c)
+        return ed
+t=Reverse(a)
+print(t.cal())
