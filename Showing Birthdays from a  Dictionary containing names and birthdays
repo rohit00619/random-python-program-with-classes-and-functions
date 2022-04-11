@@ -1,0 +1,17 @@
+#p1 is the dictionary that we are taking
+p1 = {"rohit": '1-mar-1993',"mohit": '5-Sep-1993',"abhishek": '3-May-1993',"navdeep": '1-Jan-1994'}
+#in1 is the Input name that we are taking
+in1=input("Enter the name that you want to search: ")
+class Bir():
+    def __init__(self,dict,b):
+        self.dict=dict
+        self.b=b
+        self.c=b.lower()
+
+    def cal(self):
+        for k in self.dict:
+            if self.c==k.lower():
+                return "The Birthday is {}".format(self.dict[self.c])
+        return "No Match Found for {}".format(self.b)
+t=Bir(p1,in1)
+print(t.cal())
